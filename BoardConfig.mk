@@ -17,17 +17,14 @@ FORCE_32_BIT := true
 
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/yu/jalebi
+DEVICE_PATH := device/lenovo/wt86518
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
-
-# Assertions
-TARGET_BOARD_INFO_FILE := device/yu/jalebi/board-info.txt
 
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
-TARGET_KERNEL_CONFIG := lineageos_jalebi_defconfig
+TARGET_KERNEL_CONFIG := wt86518_defconfig
 
 # Bootchart
 ifeq ($(strip $(INIT_BOOTCHART)),true)
@@ -76,10 +73,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/yu/jalebi/sepolicy
+    device/lenovo/wt86518/sepolicy
 
 # Wifi
 TARGET_PROVIDES_WCNSS_QMI := true
 
 # inherit from the proprietary version
--include vendor/yu/jalebi/BoardConfigVendor.mk
+-include vendor/lenovo/wt86518/BoardConfigVendor.mk

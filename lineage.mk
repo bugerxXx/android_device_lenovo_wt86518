@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/yu/jalebi/full_jalebi.mk)
+$(call inherit-product, device/lenovo/wt86518/full_wt86518.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -20,12 +20,12 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_jalebi
-BOARD_VENDOR := yu
-PRODUCT_DEVICE := jalebi
+PRODUCT_NAME := lineage_wt86518
+BOARD_VENDOR := lenovo
+PRODUCT_DEVICE := a6000
 
-PRODUCT_GMS_CLIENTID_BASE := android-micromax
+PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
-TARGET_VENDOR_PRODUCT_NAME := YUNIQUE
-TARGET_VENDOR_DEVICE_NAME := YUNIQUE
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUNIQUE PRODUCT_NAME=YUNIQUE
+TARGET_VENDOR_PRODUCT_NAME := LENOVO
+TARGET_VENDOR_DEVICE_NAME := LENOVO
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=LENOVO PRODUCT_NAME=A6000

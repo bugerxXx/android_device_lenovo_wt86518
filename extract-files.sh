@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=jalebi
-VENDOR=yu
+DEVICE=wt86518
+VENDOR=lenovo
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

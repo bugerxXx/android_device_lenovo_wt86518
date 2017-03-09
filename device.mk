@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/wt86518-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
